@@ -61,7 +61,7 @@ export default function Home() {
   return (
     <main className="flex-1">
       {/* Header */}
-      <header className="border-b border-navy-600 bg-navy-800/50 backdrop-blur-sm sticky top-0 z-50">
+      <header className="border-b border-gray-200 bg-white/50 backdrop-blur-sm sticky top-0 z-50 dark:border-navy-600 dark:bg-navy-800/50">
         <div className="mx-auto max-w-7xl px-6 py-4 lg:px-8 flex items-center justify-between">
           <div className="flex items-center gap-3">
             <span className="text-sm font-semibold tracking-widest uppercase text-gold-500">
@@ -76,10 +76,10 @@ export default function Home() {
       <section className="relative px-6 py-16 lg:px-8 lg:py-20">
         <div className="mx-auto max-w-7xl">
           <div className="mx-auto max-w-3xl text-center">
-            <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl">
+            <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl lg:text-6xl dark:text-white">
               Resource Bank
             </h1>
-            <p className="mt-6 text-base leading-7 text-gray-300 sm:text-lg">
+            <p className="mt-6 text-base leading-7 text-gray-600 sm:text-lg dark:text-gray-300">
               The central repository for finance, economics, markets, investing, research, 
               quantitative finance, and career preparation resources.
             </p>
@@ -88,7 +88,7 @@ export default function Home() {
       </section>
 
       {/* Search & Filter Section */}
-      <section className="px-6 py-12 lg:px-8 bg-navy-800/50">
+      <section className="px-6 py-12 lg:px-8 bg-gray-50 dark:bg-navy-800/50">
         <div className="mx-auto max-w-7xl">
           <div className="flex flex-col gap-6">
             <SearchBar onSearch={setSearchQuery} placeholder="Search resources by title, description, or tags..." />
@@ -99,9 +99,9 @@ export default function Home() {
 
       {/* Recently Added Section */}
       {searchQuery === "" && activeTab === "all" && (
-        <section className="px-6 py-12 lg:px-8 bg-navy-800/30">
+        <section className="px-6 py-12 lg:px-8 bg-gray-100 dark:bg-navy-800/30">
           <div className="mx-auto max-w-7xl">
-            <h3 className="text-xl font-bold tracking-tight text-white sm:text-2xl mb-8">
+            <h3 className="text-xl font-bold tracking-tight text-gray-900 sm:text-2xl mb-8 dark:text-white">
               Recently Added
             </h3>
             <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -125,7 +125,7 @@ export default function Home() {
       <section className="px-6 py-12 lg:px-8">
         <div className="mx-auto max-w-7xl">
           <div className="flex items-center justify-between mb-8">
-            <h3 className="text-xl font-bold tracking-tight text-white sm:text-2xl">
+            <h3 className="text-xl font-bold tracking-tight text-gray-900 sm:text-2xl dark:text-white">
               {filteredResources.length} {filteredResources.length === 1 ? "Resource" : "Resources"}
             </h3>
           </div>
@@ -146,7 +146,7 @@ export default function Home() {
             </div>
           ) : (
             <div className="text-center py-12">
-              <p className="text-gray-400 text-base sm:text-lg">No resources found matching your search.</p>
+              <p className="text-gray-600 text-base sm:text-lg dark:text-gray-400">No resources found matching your search.</p>
             </div>
           )}
         </div>

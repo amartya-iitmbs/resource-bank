@@ -19,10 +19,10 @@ export default function ResourceCard({
   onDownload,
 }: ResourceCardProps) {
   return (
-    <div className="group rounded-xl border border-navy-600 bg-navy-800 p-6 hover:border-gold-500 transition-all duration-200">
+    <div className="group rounded-xl border border-gray-200 bg-white p-6 hover:border-gold-500 dark:border-navy-600 dark:bg-navy-800 transition-all duration-200">
       <div className="flex items-start justify-between mb-4">
         <div className="flex items-center gap-3">
-          <div className="p-2 bg-navy-700 rounded-lg">
+          <div className="p-2 bg-gray-100 rounded-lg dark:bg-navy-700">
             <FileText className="w-5 h-5 text-gold-500" />
           </div>
           <div>
@@ -33,11 +33,11 @@ export default function ResourceCard({
         </div>
       </div>
 
-      <h3 className="text-lg font-semibold text-white mb-2 group-hover:text-gold-500 transition-colors">
+      <h3 className="text-lg font-semibold text-gray-900 mb-2 group-hover:text-gold-500 dark:text-white transition-colors">
         {title}
       </h3>
 
-      <p className="text-sm text-gray-400 mb-4 line-clamp-2">
+      <p className="text-sm text-gray-600 mb-4 line-clamp-2 dark:text-gray-400">
         {description}
       </p>
 
@@ -45,7 +45,7 @@ export default function ResourceCard({
         {tags.slice(0, 3).map((tag) => (
           <span
             key={tag}
-            className="text-xs bg-navy-700 text-gray-300 px-2 py-1 rounded"
+            className="text-xs bg-gray-100 text-gray-700 px-2 py-1 rounded dark:bg-navy-700 dark:text-gray-300"
           >
             {tag}
           </span>

@@ -12,7 +12,7 @@ export default function ThemeToggle() {
       onClick={toggleTheme}
       className={cn(
         "p-2 rounded-lg transition-colors",
-        "bg-navy-800 border border-navy-600 hover:border-gold-500",
+        "bg-white border border-gray-300 hover:border-gold-500 dark:bg-navy-800 dark:border-navy-600 dark:hover:border-gold-500",
         "text-gold-500"
       )}
       aria-label="Toggle theme"

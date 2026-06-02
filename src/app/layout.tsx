@@ -14,8 +14,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="dark">
-      <body className="min-h-screen bg-navy-900 text-white dark:bg-navy-900 dark:text-white light:bg-gray-50 light:text-gray-900">
+    <html lang="en">
+      <body className="min-h-screen bg-gray-50 text-gray-900 dark:bg-navy-900 dark:text-white">
         <ThemeProvider>
           <div className="flex flex-col min-h-screen">
             {children}

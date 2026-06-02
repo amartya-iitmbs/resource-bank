@@ -29,8 +29,8 @@ export default function SearchBar({ onSearch, placeholder = "Search resources...
         onChange={handleChange}
         placeholder={placeholder}
         className={cn(
-          "w-full pl-12 pr-4 py-3 bg-navy-800 border border-navy-600 rounded-lg",
-          "text-white placeholder-gray-400",
+          "w-full pl-12 pr-4 py-3 bg-white border border-gray-300 dark:bg-navy-800 dark:border-navy-600 rounded-lg",
+          "text-gray-900 placeholder-gray-500 dark:text-white dark:placeholder-gray-400",
           "focus:outline-none focus:border-gold-500 focus:ring-1 focus:ring-gold-500",
           "transition-colors"
         )}
