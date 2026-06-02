@@ -38,11 +38,11 @@ export default function Footer() {
             <h4 className="text-sm font-semibold text-gray-900 dark:text-white mb-3">Connect</h4>
             <div className="flex gap-4">
               <a
-                href="https://github.com/amartya-iitmbs/introductory-bootcamp"
+                href="https://amartya.iitmbs.org"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-600 hover:text-gold-500 dark:text-gray-400 dark:hover:text-gold-500 transition-colors"
-                aria-label="GitHub Repository"
+                aria-label="Amartya Finance Society Website"
               >
                 <Github className="w-5 h-5" />
               </a>
