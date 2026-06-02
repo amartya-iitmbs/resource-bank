@@ -4,6 +4,7 @@ import { useState, useMemo } from "react";
 import SearchBar from "@/components/SearchBar";
 import FilterTabs from "@/components/FilterTabs";
 import ResourceCard from "@/components/ResourceCard";
+import VideoCard from "@/components/VideoCard";
 import ThemeToggle from "@/components/ThemeToggle";
 import { resourcesData } from "@/data/resources";
 import { Resource, ResourcesData } from "@/types";
@@ -58,6 +59,10 @@ export default function Home() {
     window.open(file, "_blank");
   };
 
+  const handleWatch = (url: string) => {
+    window.open(url, "_blank");
+  };
+
   return (
     <main className="flex-1">
       {/* Header */}
@@ -105,17 +110,34 @@ export default function Home() {
               Recently Added
             </h3>
             <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-              {recentlyAdded.map((resource) => (
-                <ResourceCard
-                  key={resource.id}
-                  title={resource.title}
-                  description={resource.description}
-                  category={resource.category}
-                  tags={resource.tags}
-                  file={resource.file}
-                  onDownload={() => handleDownload(resource.file)}
-                />
-              ))}
+              {recentlyAdded.map((resource) => {
+                if (resource.url) {
+                  const videoUrl = resource.url;
+                  return (
+                    <VideoCard
+                      key={resource.id}
+                      title={resource.title}
+                      description={resource.description}
+                      category={resource.category}
+                      tags={resource.tags}
+                      url={videoUrl}
+                      onWatch={() => handleWatch(videoUrl)}
+                    />
+                  );
+                }
+                const pdfFile = resource.file || "";
+                return (
+                  <ResourceCard
+                    key={resource.id}
+                    title={resource.title}
+                    description={resource.description}
+                    category={resource.category}
+                    tags={resource.tags}
+                    file={pdfFile}
+                    onDownload={() => handleDownload(pdfFile)}
+                  />
+                );
+              })}
             </div>
           </div>
         </section>
@@ -132,17 +154,34 @@ export default function Home() {
 
           {filteredResources.length > 0 ? (
             <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-              {filteredResources.map((resource) => (
-                <ResourceCard
-                  key={resource.id}
-                  title={resource.title}
-                  description={resource.description}
-                  category={resource.category}
-                  tags={resource.tags}
-                  file={resource.file}
-                  onDownload={() => handleDownload(resource.file)}
-                />
-              ))}
+              {filteredResources.map((resource) => {
+                if (resource.url) {
+                  const videoUrl = resource.url;
+                  return (
+                    <VideoCard
+                      key={resource.id}
+                      title={resource.title}
+                      description={resource.description}
+                      category={resource.category}
+                      tags={resource.tags}
+                      url={videoUrl}
+                      onWatch={() => handleWatch(videoUrl)}
+                    />
+                  );
+                }
+                const pdfFile = resource.file || "";
+                return (
+                  <ResourceCard
+                    key={resource.id}
+                    title={resource.title}
+                    description={resource.description}
+                    category={resource.category}
+                    tags={resource.tags}
+                    file={pdfFile}
+                    onDownload={() => handleDownload(pdfFile)}
+                  />
+                );
+              })}
             </div>
           ) : (
             <div className="text-center py-12">

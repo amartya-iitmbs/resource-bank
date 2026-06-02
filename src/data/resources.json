@@ -145,6 +145,207 @@
       "dateAdded": "2026-06-03"
     }
   ],
-  "videos": [],
+  "videos": [
+    {
+      "id": "week1-financial-systems",
+      "title": "Introduction to Financial Systems",
+      "description": "Learn the fundamentals of financial systems, how they operate, and their role in the global economy",
+      "category": "Foundations of Finance",
+      "tags": ["financial-systems", "fundamentals", "week1"],
+      "url": "https://www.youtube.com/watch?v=04POar44758",
+      "thumbnail": "",
+      "dateAdded": "2026-06-03"
+    },
+    {
+      "id": "week1-basic-concepts",
+      "title": "Explaining Basic Financial Concepts",
+      "description": "Understanding core financial concepts that form the building blocks of financial literacy and analysis",
+      "category": "Foundations of Finance",
+      "tags": ["fundamentals", "concepts", "week1"],
+      "url": "https://www.youtube.com/watch?v=A9Xq3FGjpZA",
+      "thumbnail": "",
+      "dateAdded": "2026-06-03"
+    },
+    {
+      "id": "week1-terms",
+      "title": "Important Terms in Finance",
+      "description": "Essential financial terminology and vocabulary you need to understand for advanced financial topics",
+      "category": "Foundations of Finance",
+      "tags": ["terminology", "vocabulary", "week1"],
+      "url": "https://www.youtube.com/watch?v=8MwdBqX2rBw",
+      "thumbnail": "",
+      "dateAdded": "2026-06-03"
+    },
+    {
+      "id": "week2-tvm",
+      "title": "Understanding Time Value of Money",
+      "description": "Learn the fundamental concept of time value of money and why money today is worth more than money tomorrow",
+      "category": "Time Value of Money & Risk",
+      "tags": ["tvm", "valuation", "week2"],
+      "url": "https://youtu.be/ImzkF-f1DL0",
+      "thumbnail": "",
+      "dateAdded": "2026-06-03"
+    },
+    {
+      "id": "week2-tvm-explained",
+      "title": "Time Value of Money Explained",
+      "description": "Deep dive into time value of money concepts with practical examples and applications in finance",
+      "category": "Time Value of Money & Risk",
+      "tags": ["tvm", "examples", "week2"],
+      "url": "https://youtu.be/DQN9NquSKJE",
+      "thumbnail": "",
+      "dateAdded": "2026-06-03"
+    },
+    {
+      "id": "week2-compounding",
+      "title": "Miracle of Compounding",
+      "description": "Discover the power of compound interest and how it can dramatically grow your wealth over time",
+      "category": "Time Value of Money & Risk",
+      "tags": ["compounding", "investing", "week2"],
+      "url": "https://youtu.be/072wplDy7dc",
+      "thumbnail": "",
+      "dateAdded": "2026-06-03"
+    },
+    {
+      "id": "week2-risk-return",
+      "title": "Risk vs Return",
+      "description": "Explore the relationship between risk and return, and how to assess investment opportunities",
+      "category": "Time Value of Money & Risk",
+      "tags": ["risk", "return", "week2"],
+      "url": "https://youtu.be/4KGvoy_Ke9Y",
+      "thumbnail": "",
+      "dateAdded": "2026-06-03"
+    },
+    {
+      "id": "week3-financial-markets",
+      "title": "Introduction to Financial Markets",
+      "description": "Learn the fundamentals of financial markets, how they operate, and their role in the global economy",
+      "category": "Markets & Instruments",
+      "tags": ["markets", "fundamentals", "week3"],
+      "url": "https://youtu.be/5ZlScwPtS2Y",
+      "thumbnail": "",
+      "dateAdded": "2026-06-03"
+    },
+    {
+      "id": "week3-stock-markets",
+      "title": "How the Stock Markets Work",
+      "description": "Deep dive into stock market mechanics, trading processes, and market infrastructure",
+      "category": "Markets & Instruments",
+      "tags": ["stock-market", "trading", "week3"],
+      "url": "https://youtu.be/p7HKvqRI_Bo",
+      "thumbnail": "",
+      "dateAdded": "2026-06-03"
+    },
+    {
+      "id": "week3-equity",
+      "title": "How Equity Earns You Money",
+      "description": "Understanding how equity investments generate returns through capital appreciation and dividends",
+      "category": "Markets & Instruments",
+      "tags": ["equity", "returns", "week3"],
+      "url": "https://youtu.be/vZCGsi5pfso",
+      "thumbnail": "",
+      "dateAdded": "2026-06-03"
+    },
+    {
+      "id": "week3-participants",
+      "title": "Market Participants",
+      "description": "Explore the different types of market participants: investors, traders, institutions, and market makers",
+      "category": "Markets & Instruments",
+      "tags": ["participants", "institutions", "week3"],
+      "url": "https://youtu.be/t5jkowUdpEk",
+      "thumbnail": "",
+      "dateAdded": "2026-06-03"
+    },
+    {
+      "id": "week3-terms",
+      "title": "Stock Market Terms Explained",
+      "description": "Essential stock market terminology and vocabulary every investor should know",
+      "category": "Markets & Instruments",
+      "tags": ["terminology", "vocabulary", "week3"],
+      "url": "https://youtu.be/T37YvxMTofc",
+      "thumbnail": "",
+      "dateAdded": "2026-06-03"
+    },
+    {
+      "id": "week4-derivatives",
+      "title": "Introduction to Derivatives",
+      "description": "Learn the fundamentals of derivatives, including forwards, futures, options, and swaps",
+      "category": "Commodities & Currencies",
+      "tags": ["derivatives", "futures", "options", "week4"],
+      "url": "https://www.youtube.com/watch?v=LQrBzl0DMBA",
+      "thumbnail": "",
+      "dateAdded": "2026-06-03"
+    },
+    {
+      "id": "week4-commodity-derivatives",
+      "title": "Introduction to Commodity Derivatives",
+      "description": "Explore commodity derivatives markets, including agricultural, energy, and metal commodities trading",
+      "category": "Commodities & Currencies",
+      "tags": ["commodities", "derivatives", "week4"],
+      "url": "https://www.youtube.com/watch?v=JD8KNwtx61c",
+      "thumbnail": "",
+      "dateAdded": "2026-06-03"
+    },
+    {
+      "id": "week4-gold-standard",
+      "title": "The Gold Standard",
+      "description": "Understanding the gold standard system, its historical significance, and its impact on international monetary systems",
+      "category": "Commodities & Currencies",
+      "tags": ["gold-standard", "monetary", "history", "week4"],
+      "url": "https://www.youtube.com/watch?v=GNo7MDN5-0g",
+      "thumbnail": "",
+      "dateAdded": "2026-06-03"
+    },
+    {
+      "id": "week4-money-types",
+      "title": "Commodity Money vs. Fiat Money",
+      "description": "Compare commodity money and fiat money systems, understanding their characteristics and advantages",
+      "category": "Commodities & Currencies",
+      "tags": ["money", "fiat", "commodity", "week4"],
+      "url": "https://www.youtube.com/watch?v=fs12fX407GU",
+      "thumbnail": "",
+      "dateAdded": "2026-06-03"
+    },
+    {
+      "id": "week4-forex",
+      "title": "Forex Trading Explained",
+      "description": "Learn the fundamentals of foreign exchange trading, currency pairs, and how forex markets operate globally",
+      "category": "Commodities & Currencies",
+      "tags": ["forex", "currencies", "trading", "week4"],
+      "url": "https://www.youtube.com/watch?v=fPERzHyuQGo",
+      "thumbnail": "",
+      "dateAdded": "2026-06-03"
+    },
+    {
+      "id": "week5-business-model",
+      "title": "What is a Business Model",
+      "description": "Understanding the fundamental concepts of business models, how companies create value, and key components of successful business strategies",
+      "category": "Business Models & FinTech",
+      "tags": ["business-model", "strategy", "week5"],
+      "url": "https://youtu.be/_C-vGu2mL38",
+      "thumbnail": "",
+      "dateAdded": "2026-06-03"
+    },
+    {
+      "id": "week5-financial-modeling",
+      "title": "Financial Modeling 101",
+      "description": "Introduction to financial modeling techniques, building spreadsheets, forecasting methods, and creating models for business decisions",
+      "category": "Business Models & FinTech",
+      "tags": ["modeling", "spreadsheets", "forecasting", "week5"],
+      "url": "https://www.youtube.com/watch?v=AYyzkfkeE-8",
+      "thumbnail": "",
+      "dateAdded": "2026-06-03"
+    },
+    {
+      "id": "week5-fintech",
+      "title": "Intro to FinTech",
+      "description": "Explore the revolutionary world of Financial Technology, from digital payments to blockchain, and understand how FinTech is reshaping financial services",
+      "category": "Business Models & FinTech",
+      "tags": ["fintech", "blockchain", "innovation", "week5"],
+      "url": "https://youtu.be/GDQF4ea6FBs",
+      "thumbnail": "",
+      "dateAdded": "2026-06-03"
+    }
+  ],
   "links": []
 }

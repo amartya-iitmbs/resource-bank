@@ -4,7 +4,9 @@ export interface Resource {
   description: string;
   category: string;
   tags: string[];
-  file: string;
+  file?: string;
+  url?: string;
+  thumbnail?: string;
   dateAdded: string;
   type?: "pdf" | "video" | "link";
 }
