@@ -8,7 +8,7 @@
 }
 
 body {
-  @apply bg-navy-900 text-white antialiased;
+  @apply antialiased;
 }
 
 @layer utilities {
