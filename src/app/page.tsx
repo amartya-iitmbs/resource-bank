@@ -73,8 +73,9 @@ export default function Home() {
       {/* Header */}
       <header className="border-b border-gray-200 bg-white/50 backdrop-blur-sm sticky top-0 z-50 dark:border-navy-600 dark:bg-navy-800/50">
         <div className="mx-auto max-w-7xl px-6 py-4 lg:px-8 flex items-center justify-between">
-          <div className="flex items-center gap-3">
-            <span className="text-sm font-semibold tracking-widest uppercase text-gold-500">
+          <div className="flex items-center gap-4">
+            <img src="/logo.png" alt="Amartya Finance Society Logo" className="h-16 w-auto" />
+            <span className="text-lg font-bold text-gold-500">
               Amartya Finance Society
             </span>
           </div>
