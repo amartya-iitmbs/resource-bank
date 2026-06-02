@@ -5,6 +5,7 @@ import SearchBar from "@/components/SearchBar";
 import FilterTabs from "@/components/FilterTabs";
 import ResourceCard from "@/components/ResourceCard";
 import VideoCard from "@/components/VideoCard";
+import LinkCard from "@/components/LinkCard";
 import ThemeToggle from "@/components/ThemeToggle";
 import { resourcesData } from "@/data/resources";
 import { Resource, ResourcesData } from "@/types";
@@ -13,11 +14,12 @@ export default function Home() {
   const [searchQuery, setSearchQuery] = useState("");
   const [activeTab, setActiveTab] = useState("all");
 
-  const { pdfs, videos, links } = resourcesData as ResourcesData;
+  const { pdfs, caseStudies, videos, links } = resourcesData as ResourcesData;
 
   const tabs = [
-    { id: "all", label: "All", count: pdfs.length + videos.length + links.length },
+    { id: "all", label: "All", count: pdfs.length + caseStudies.length + videos.length + links.length },
     { id: "pdfs", label: "PDFs", count: pdfs.length },
+    { id: "caseStudies", label: "Case Studies", count: caseStudies.length },
     { id: "videos", label: "Videos", count: videos.length },
     { id: "links", label: "Links", count: links.length },
   ];
@@ -27,6 +29,9 @@ export default function Home() {
 
     if (activeTab === "all" || activeTab === "pdfs") {
       resources = [...resources, ...pdfs.map((r: Resource) => ({ ...r, type: "pdf" as const }))];
+    }
+    if (activeTab === "all" || activeTab === "caseStudies") {
+      resources = [...resources, ...caseStudies.map((r: Resource) => ({ ...r, type: "caseStudy" as const }))];
     }
     if (activeTab === "all" || activeTab === "videos") {
       resources = [...resources, ...videos.map((r: Resource) => ({ ...r, type: "video" as const }))];
@@ -46,14 +51,14 @@ export default function Home() {
     }
 
     return resources;
-  }, [searchQuery, activeTab, pdfs, videos, links]);
+  }, [searchQuery, activeTab, pdfs, caseStudies, videos, links]);
 
   const recentlyAdded = useMemo(() => {
-    const allResources = [...pdfs, ...videos, ...links];
+    const allResources = [...pdfs, ...caseStudies, ...videos, ...links];
     return allResources
       .sort((a, b) => new Date(b.dateAdded).getTime() - new Date(a.dateAdded).getTime())
       .slice(0, 3);
-  }, [pdfs, videos, links]);
+  }, [pdfs, caseStudies, videos, links]);
 
   const handleDownload = (file: string) => {
     window.open(file, "_blank");
@@ -111,7 +116,7 @@ export default function Home() {
             </h3>
             <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
               {recentlyAdded.map((resource) => {
-                if (resource.url) {
+                if (resource.url && resource.type === "video") {
                   const videoUrl = resource.url;
                   return (
                     <VideoCard
@@ -122,6 +127,20 @@ export default function Home() {
                       tags={resource.tags}
                       url={videoUrl}
                       onWatch={() => handleWatch(videoUrl)}
+                    />
+                  );
+                }
+                if (resource.url && resource.type === "link") {
+                  const linkUrl = resource.url;
+                  return (
+                    <LinkCard
+                      key={resource.id}
+                      title={resource.title}
+                      description={resource.description}
+                      category={resource.category}
+                      tags={resource.tags}
+                      url={linkUrl}
+                      onOpen={() => handleWatch(linkUrl)}
                     />
                   );
                 }
@@ -155,7 +174,7 @@ export default function Home() {
           {filteredResources.length > 0 ? (
             <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
               {filteredResources.map((resource) => {
-                if (resource.url) {
+                if (resource.url && resource.type === "video") {
                   const videoUrl = resource.url;
                   return (
                     <VideoCard
@@ -166,6 +185,20 @@ export default function Home() {
                       tags={resource.tags}
                       url={videoUrl}
                       onWatch={() => handleWatch(videoUrl)}
+                    />
+                  );
+                }
+                if (resource.url && resource.type === "link") {
+                  const linkUrl = resource.url;
+                  return (
+                    <LinkCard
+                      key={resource.id}
+                      title={resource.title}
+                      description={resource.description}
+                      category={resource.category}
+                      tags={resource.tags}
+                      url={linkUrl}
+                      onOpen={() => handleWatch(linkUrl)}
                     />
                   );
                 }

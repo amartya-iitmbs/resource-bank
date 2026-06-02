@@ -53,12 +53,14 @@
       "tags": ["fintech", "business-models", "innovation"],
       "file": "assets/resources/fintech-and-strategies.pdf",
       "dateAdded": "2026-06-03"
-    },
+    }
+  ],
+  "caseStudies": [
     {
       "id": "week1-mini-case",
       "title": "Week 1 Mini Case Study",
       "description": "Introduction to financial systems and basic concepts application",
-      "category": "Case Studies",
+      "category": "Foundations of Finance",
       "tags": ["case-study", "financial-systems", "basics"],
       "file": "assets/case-studies/week1_mini_case_study.pdf",
       "dateAdded": "2026-06-03"
@@ -67,7 +69,7 @@
       "id": "week1-case-study",
       "title": "Black Monday Stock Market Crash 1987",
       "description": "In-depth analysis of the 1987 stock market crash and its impact on financial systems",
-      "category": "Case Studies",
+      "category": "Foundations of Finance",
       "tags": ["case-study", "market-crash", "history"],
       "file": "assets/case-studies/week1-case-study.pdf",
       "dateAdded": "2026-06-03"
@@ -76,7 +78,7 @@
       "id": "week2-mini-case",
       "title": "Week 2 Mini Case Study",
       "description": "Application of time value of money and risk-return concepts in real-world scenarios",
-      "category": "Case Studies",
+      "category": "Time Value of Money & Risk",
       "tags": ["case-study", "tvm", "risk-return"],
       "file": "assets/case-studies/week2_mini_case_study.pdf",
       "dateAdded": "2026-06-03"
@@ -85,7 +87,7 @@
       "id": "week2-case-study",
       "title": "Dot-Com Bubble Burst 2000",
       "description": "In-depth analysis of the dot-com bubble burst, valuation principles, and risk assessment in technology investments",
-      "category": "Case Studies",
+      "category": "Time Value of Money & Risk",
       "tags": ["case-study", "dot-com", "valuation", "tech"],
       "file": "assets/case-studies/week2-case-study.pdf",
       "dateAdded": "2026-06-03"
@@ -94,7 +96,7 @@
       "id": "week3-mini-case",
       "title": "Week 3 Mini Case Study - Zomato",
       "description": "Analysis of Zomato's business model, market performance, and equity market dynamics",
-      "category": "Case Studies",
+      "category": "Markets & Instruments",
       "tags": ["case-study", "zomato", "business-model", "equity"],
       "file": "assets/case-studies/week3_mini_case_study_zomato.pdf",
       "dateAdded": "2026-06-03"
@@ -103,7 +105,7 @@
       "id": "week3-case-study",
       "title": "Financial Markets & Equity Analysis",
       "description": "In-depth analysis of market operations, equity valuation, and investment strategies",
-      "category": "Case Studies",
+      "category": "Markets & Instruments",
       "tags": ["case-study", "equity", "valuation", "investing"],
       "file": "assets/case-studies/week3-case-study.pdf",
       "dateAdded": "2026-06-03"
@@ -112,7 +114,7 @@
       "id": "week4-mini-case",
       "title": "Week 4 Mini Case Study",
       "description": "Analysis of commodity derivatives trading strategies and risk management techniques in modern markets",
-      "category": "Case Studies",
+      "category": "Commodities & Currencies",
       "tags": ["case-study", "derivatives", "risk-management"],
       "file": "assets/case-studies/week4_mini_case_study.pdf",
       "dateAdded": "2026-06-03"
@@ -121,7 +123,7 @@
       "id": "week4-case-study",
       "title": "Economic Liberalisation - Market Analysis",
       "description": "In-depth analysis of economic liberalisation policies and their impact on financial markets, trade, and economic growth",
-      "category": "Case Studies",
+      "category": "Commodities & Currencies",
       "tags": ["case-study", "liberalisation", "economics", "policy"],
       "file": "assets/case-studies/week4-case-study-liberalisation.pdf",
       "dateAdded": "2026-06-03"
@@ -130,7 +132,7 @@
       "id": "week5-mini-case",
       "title": "Week 5 Mini Case Study",
       "description": "Analysis of modern FinTech startups and their disruptive business models in the financial services sector",
-      "category": "Case Studies",
+      "category": "Business Models & FinTech",
       "tags": ["case-study", "fintech", "startups", "disruption"],
       "file": "assets/case-studies/week5_mini_case_study.pdf",
       "dateAdded": "2026-06-03"
@@ -139,7 +141,7 @@
       "id": "week5-case-study",
       "title": "Business Model Innovation - FinTech Analysis",
       "description": "Comprehensive analysis of successful FinTech companies and their innovative approaches to disrupting traditional financial services",
-      "category": "Case Studies",
+      "category": "Business Models & FinTech",
       "tags": ["case-study", "fintech", "innovation", "business-model"],
       "file": "assets/case-studies/week5-case-study.pdf",
       "dateAdded": "2026-06-03"
@@ -347,5 +349,150 @@
       "dateAdded": "2026-06-03"
     }
   ],
-  "links": []
+  "links": [
+    {
+      "id": "investopedia-tvm",
+      "title": "Investopedia: Time Value of Money",
+      "description": "Detailed explanation of time value of money concept with examples and formulas from Investopedia",
+      "category": "Time Value of Money & Risk",
+      "tags": ["tvm", "investopedia", "valuation"],
+      "url": "https://www.investopedia.com/terms/t/timevalueofmoney.asp",
+      "dateAdded": "2026-06-03"
+    },
+    {
+      "id": "financial-markets-rachana",
+      "title": "Financial Markets",
+      "description": "Comprehensive guide to understanding financial markets, their functions, and importance in the economy",
+      "category": "Markets & Instruments",
+      "tags": ["markets", "fundamentals", "reading"],
+      "url": "https://www.rachanaranade.com/blog/what-is-the-financial-market",
+      "dateAdded": "2026-06-03"
+    },
+    {
+      "id": "investopedia-equity",
+      "title": "Equity Markets",
+      "description": "Detailed explanation of equity markets, stock trading, and how equity investments work from Investopedia",
+      "category": "Markets & Instruments",
+      "tags": ["equity", "investopedia", "trading"],
+      "url": "https://www.investopedia.com/terms/e/equitymarket.asp",
+      "dateAdded": "2026-06-03"
+    },
+    {
+      "id": "cfi-market-players",
+      "title": "Key Market Players",
+      "description": "Understanding the major participants in capital markets and their roles in the financial ecosystem",
+      "category": "Markets & Instruments",
+      "tags": ["participants", "institutions", "cfi"],
+      "url": "https://corporatefinanceinstitute.com/resources/career/key-players-in-capital-markets/",
+      "dateAdded": "2026-06-03"
+    },
+    {
+      "id": "investopedia-capital",
+      "title": "Capital Markets",
+      "description": "In-depth analysis of capital markets, their structure, and how they facilitate capital formation from Investopedia",
+      "category": "Markets & Instruments",
+      "tags": ["capital", "investopedia", "markets"],
+      "url": "https://www.investopedia.com/terms/c/capitalmarkets.asp",
+      "dateAdded": "2026-06-03"
+    },
+    {
+      "id": "ebc-money-types",
+      "title": "Commodity Money vs Fiat Money",
+      "description": "Understanding the key differences between commodity money and fiat currency systems",
+      "category": "Commodities & Currencies",
+      "tags": ["money", "fiat", "commodity"],
+      "url": "https://www.ebc.com/forex/commodity-money-vs-fiat-money-what-s-the-difference",
+      "dateAdded": "2026-06-03"
+    },
+    {
+      "id": "groww-commodities",
+      "title": "Commodities from Indian Perspective",
+      "description": "Understanding commodity markets from an Indian market context and perspective",
+      "category": "Commodities & Currencies",
+      "tags": ["commodities", "indian", "markets"],
+      "url": "https://groww.in/p/commodity-market",
+      "dateAdded": "2026-06-03"
+    },
+    {
+      "id": "gold-org-standard",
+      "title": "The Gold Standard",
+      "description": "Historical analysis of the classical gold standard monetary system",
+      "category": "Commodities & Currencies",
+      "tags": ["gold-standard", "monetary", "history"],
+      "url": "https://www.gold.org/history-gold/the-classical-gold-standard",
+      "dateAdded": "2026-06-03"
+    },
+    {
+      "id": "investopedia-forex",
+      "title": "A Guide To Making Money with Forex",
+      "description": "Comprehensive guide to forex trading strategies and profit opportunities",
+      "category": "Commodities & Currencies",
+      "tags": ["forex", "trading", "investopedia"],
+      "url": "https://www.investopedia.com/articles/forex/11/why-trade-forex.asp",
+      "dateAdded": "2026-06-03"
+    },
+    {
+      "id": "sebi-derivatives",
+      "title": "Understanding Derivatives",
+      "description": "Official SEBI guide to understanding derivatives markets and instruments",
+      "category": "Commodities & Currencies",
+      "tags": ["derivatives", "sebi", "regulatory"],
+      "url": "https://investor.sebi.gov.in/understanding_derivatives.html",
+      "dateAdded": "2026-06-03"
+    },
+    {
+      "id": "investopedia-currency",
+      "title": "Understanding Currency Trading",
+      "description": "Comprehensive guide to currency trading basics, strategies, and market fundamentals",
+      "category": "Commodities & Currencies",
+      "tags": ["currency", "trading", "investopedia"],
+      "url": "https://www.investopedia.com/financial-edge/0412/the-basics-of-currency-trading.aspx",
+      "dateAdded": "2026-06-03"
+    },
+    {
+      "id": "investopedia-business-model",
+      "title": "Business Model: Definition and 13 Examples",
+      "description": "Comprehensive guide to business model definitions with real-world examples from Investopedia",
+      "category": "Business Models & FinTech",
+      "tags": ["business-model", "investopedia", "examples"],
+      "url": "https://www.investopedia.com/terms/b/businessmodel.asp",
+      "dateAdded": "2026-06-03"
+    },
+    {
+      "id": "hbs-business-models",
+      "title": "8 Types of Business Models & the Value They Deliver",
+      "description": "Harvard Business School analysis of different business model types and their value propositions",
+      "category": "Business Models & FinTech",
+      "tags": ["business-model", "hbs", "strategy"],
+      "url": "https://online.hbs.edu/blog/post/types-of-business-models",
+      "dateAdded": "2026-06-03"
+    },
+    {
+      "id": "cfi-financial-models",
+      "title": "Types of Financial Models",
+      "description": "Corporate Finance Institute guide to various financial modeling types and applications",
+      "category": "Business Models & FinTech",
+      "tags": ["modeling", "cfi", "finance"],
+      "url": "https://corporatefinanceinstitute.com/resources/financial-modeling/types-of-financial-models/",
+      "dateAdded": "2026-06-03"
+    },
+    {
+      "id": "ibm-fintech",
+      "title": "What is FinTech?",
+      "description": "IBM's comprehensive overview of financial technology and its impact on traditional banking",
+      "category": "Business Models & FinTech",
+      "tags": ["fintech", "ibm", "technology"],
+      "url": "https://www.ibm.com/think/topics/fintech",
+      "dateAdded": "2026-06-03"
+    },
+    {
+      "id": "cfi-fintech-industry",
+      "title": "Overview of the Financial Technology Industry",
+      "description": "CFI's detailed analysis of the FinTech industry landscape and market trends",
+      "category": "Business Models & FinTech",
+      "tags": ["fintech", "cfi", "industry"],
+      "url": "https://corporatefinanceinstitute.com/resources/wealth-management/fintech-financial-technology/",
+      "dateAdded": "2026-06-03"
+    }
+  ]
 }

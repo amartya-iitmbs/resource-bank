@@ -8,11 +8,12 @@ export interface Resource {
   url?: string;
   thumbnail?: string;
   dateAdded: string;
-  type?: "pdf" | "video" | "link";
+  type?: "pdf" | "video" | "link" | "caseStudy";
 }
 
 export interface ResourcesData {
   pdfs: Resource[];
+  caseStudies: Resource[];
   videos: Resource[];
   links: Resource[];
 }
