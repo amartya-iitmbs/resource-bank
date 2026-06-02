@@ -84,14 +84,21 @@ export default function Home() {
       </header>
 
       {/* Hero Section */}
-      <section className="relative px-6 py-16 lg:px-8 lg:py-20">
-        <div className="mx-auto max-w-7xl">
-          <div className="mx-auto max-w-3xl text-center">
-            <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl lg:text-6xl dark:text-white">
+      <section className="relative overflow-hidden px-6 py-20 lg:px-8 lg:py-28">
+        {/* Background gradient */}
+        <div className="absolute inset-0 bg-gradient-to-br from-gray-50 via-white to-gray-100 dark:from-navy-900 dark:via-navy-800 dark:to-navy-900"></div>
+
+        {/* Decorative elements */}
+        <div className="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 rounded-full bg-gold-500/5 blur-3xl"></div>
+        <div className="absolute bottom-0 left-0 -ml-20 -mb-20 w-96 h-96 rounded-full bg-gold-500/5 blur-3xl"></div>
+
+        <div className="relative mx-auto max-w-7xl">
+          <div className="mx-auto max-w-4xl text-center">
+            <h1 className="text-5xl font-bold tracking-tight text-gray-900 sm:text-6xl lg:text-7xl dark:text-white animate-in fade-in slide-in-from-bottom-4 duration-700">
               Resource Bank
             </h1>
-            <p className="mt-6 text-base leading-7 text-gray-600 sm:text-lg dark:text-gray-300">
-              The central repository for finance, economics, markets, investing, research, 
+            <p className="mt-8 text-lg leading-8 text-gray-600 sm:text-xl dark:text-gray-300 animate-in fade-in slide-in-from-bottom-4 duration-700 delay-100">
+              The central repository for finance, economics, markets, investing, research,
               quantitative finance, and career preparation resources.
             </p>
           </div>
