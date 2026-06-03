@@ -5,6 +5,8 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
+  // Ensure CSS is properly included in static export
+  trailingSlash: true,
 };
 
 export default nextConfig;
