@@ -11,9 +11,6 @@ export default function Footer() {
             <p className="mt-2 text-sm text-gray-600 dark:text-gray-400">
               IIT Madras BS Degree
             </p>
-            <p className="mt-1 text-xs text-gray-500 dark:text-gray-500">
-              Official finance society
-            </p>
           </div>
 
           {/* Resources */}
@@ -21,12 +18,12 @@ export default function Footer() {
             <h4 className="text-sm font-semibold text-gray-900 dark:text-white mb-3">Resources</h4>
             <ul className="space-y-2">
               <li>
-                <a href="#" className="text-sm text-gray-600 hover:text-gold-500 dark:text-gray-400 dark:hover:text-gold-500 transition-colors">
+                <a href="https://forms.gle/miiEWmWYzGvP15s39" target="_blank" rel="noopener noreferrer" className="text-sm text-gray-600 hover:text-gold-500 dark:text-gray-400 dark:hover:text-gold-500 transition-colors">
                   Contribute Resources
                 </a>
               </li>
               <li>
-                <a href="#" className="text-sm text-gray-600 hover:text-gold-500 dark:text-gray-400 dark:hover:text-gold-500 transition-colors">
+                <a href="https://forms.gle/miiEWmWYzGvP15s39" target="_blank" rel="noopener noreferrer" className="text-sm text-gray-600 hover:text-gold-500 dark:text-gray-400 dark:hover:text-gold-500 transition-colors">
                   Request Resources
                 </a>
               </li>

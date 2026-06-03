@@ -79,7 +79,17 @@ export default function Home() {
               Amartya Finance Society
             </span>
           </div>
-          <ThemeToggle />
+          <div className="flex items-center gap-4">
+            <a
+              href="https://forms.gle/miiEWmWYzGvP15s39"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-4 py-2 text-sm font-medium text-white bg-gold-500 rounded-lg hover:bg-gold-600 transition-colors"
+            >
+              Request Resources
+            </a>
+            <ThemeToggle />
+          </div>
         </div>
       </header>
 
